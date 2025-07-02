@@ -12,13 +12,13 @@ int main() {
         throw ("Could not load font");
     } 
 
-    Text text(font); // SFML 3.0 requires full constructor
+    Text text(font); 
     text.setFillColor(Color::Red);
     text.setString("HIGH SCORE");
     text.setStyle(Text::Bold);
     text.setPosition({100, 200});
-   // SFML 3.0 requires move to be called with a Vector2f
-    text.setCharacterSize(50); // SFML 3.0 requires character size to be set explicitly
+  
+    text.setCharacterSize(50); 
 
     while (window.isOpen()) {
         while (optional event = window.pollEvent()) {
