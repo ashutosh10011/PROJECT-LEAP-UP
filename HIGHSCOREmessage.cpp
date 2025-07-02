@@ -10,7 +10,7 @@ int main() {
     Font font;
     if (!font.openFromFile("roboto.ttf")) {
         throw ("Could not load font");
-    }
+    } 
 
     Text text(font); // SFML 3.0 requires full constructor
     text.setFillColor(Color::Red);
